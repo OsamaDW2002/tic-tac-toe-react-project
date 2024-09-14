@@ -2,7 +2,7 @@ import {useState} from "react";
 import Player from "../component/Player.jsx";
 import GameBoard from "../component/GameBoard.jsx";
 import Log from "../component/Log.jsx";
-
+import {WINNING_COMBINATIONS} from "../winning-combinations.js";
 function derivedActivePlayer(gameTurns){
   let currentPlayer = 'X';
   if(gameTurns.length > 0 && gameTurns[0].player === 'X')
